@@ -48,3 +48,11 @@ Question.objects.all()
 
 ```
 
+## Quick Shell
+```
+python manage.py shell
+from polls.models import Choice, Question
+from django.utils import timezone
+q = Question.objects.get(pk=1)
+q.was_published_recently()
+```
