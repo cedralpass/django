@@ -56,3 +56,7 @@ from django.utils import timezone
 q = Question.objects.get(pk=1)
 q.was_published_recently()
 ```
+
+
+## Run server
+```python manage.py runserver```
